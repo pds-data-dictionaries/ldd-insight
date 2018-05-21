@@ -1,0 +1,3 @@
+"Sort Key","Type","Name","Version","Name Space Id","Description","Steward","Value Type","Minimum Cardinality","Maximum Cardinality","Minimum Value","Maximum Value","Minimum Characters","Maximum Characters","Unit of Measure Type","Specified Unit Id","Attribute Concept","Conceptual Domain"
+"insight:Observation_Information:1       ","Class","Observation_Information","1.0.0.0","insight","The Observation_Information class provides information about a science observation.","geo","","","","","","","","","","",""
+"insight:SEIS_Instrument_Parameters:1    ","Class","SEIS_Instrument_Parameters","1.0.0.0","insight","Attributes specific to the InSight Seismometer data products","geo","","","","","","","","","","",""
