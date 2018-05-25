@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <!-- PDS4 XML/Schema for Name Space Id:insight  Version:1.8.1.0 - Fri May 25 16:12:46 CDT 2018 -->
+  <!-- Generated from the PDS4 Information Model Version 1.10.0.0 - System Build 8b -->
+  <!-- *** This PDS4 product schema is an operational deliverable. *** -->
+  <!--                                                                           -->
+  <!--               Dictionary Stack                                            -->
+  <!-- 1.10.0.0 - pds: - Common Dictionary - N/A                                 -->
+  <!-- 1.8.1.0 - insight: - InSight Mission - ldd-insight.xml                   -->
+  <!--                                                                           -->
+  <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://pds.nasa.gov/pds4/mission/insight/v1"
+    xmlns:insight="http://pds.nasa.gov/pds4/mission/insight/v1"
+    xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+    elementFormDefault="qualified"
+    attributeFormDefault="unqualified"
+    version="1.10.0.0">
+ 
+    <xs:import namespace="http://pds.nasa.gov/pds4/pds/v1" schemaLocation="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.xsd"/>
+ 
+  <xs:annotation>
+    <xs:documentation>
+
+    The InSight mission dictionary contains classes and attributes specific to
+    the InSight mission and its instruments.
+    
+    InSight version 1.8.1.0 last updated 2018-05-25 20:12
+    PDS Build 1.10.0.0
+    LDDTool version 8.1.0
+    
+    Built with LDDTool -plsM
+
+  
+    </xs:documentation>
+  </xs:annotation>
+ 
+  <xs:element name="Observation_Information" type="insight:Observation_Information"> </xs:element>
+  <xs:element name="SEIS_Instrument_Parameters" type="insight:SEIS_Instrument_Parameters"> </xs:element>
+
+  <xs:complexType name="Observation_Information">
+    <xs:annotation>
+      <xs:documentation>The Observation_Information class provides
+        information about a science observation.</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="release_number" type="insight:release_number" minOccurs="0" maxOccurs="1"> </xs:element>
+      <xs:element name="mission_phase_name" type="insight:mission_phase_name" minOccurs="0" maxOccurs="1"> </xs:element>
+      <xs:element name="product_type" type="insight:product_type" minOccurs="0" maxOccurs="1"> </xs:element>
+      <xs:element name="spacecraft_clock_start_count" type="insight:spacecraft_clock_start_count" minOccurs="0" maxOccurs="1"> </xs:element>
+      <xs:element name="spacecraft_clock_stop_count" type="insight:spacecraft_clock_stop_count" minOccurs="0" maxOccurs="1"> </xs:element>
+      <xs:element name="spacecraft_clock_count_partition" type="insight:spacecraft_clock_count_partition" minOccurs="0" maxOccurs="1"> </xs:element>
+      <xs:element name="sol_number" type="insight:sol_number" minOccurs="0" maxOccurs="1"> </xs:element>
+      <xs:element name="start_sol_number" type="insight:start_sol_number" minOccurs="0" maxOccurs="1"> </xs:element>
+      <xs:element name="stop_sol_number" type="insight:stop_sol_number" minOccurs="0" maxOccurs="1"> </xs:element>
+      <xs:element name="start_local_mean_solar_time" type="insight:start_local_mean_solar_time" minOccurs="0" maxOccurs="1"> </xs:element>
+      <xs:element name="stop_local_mean_solar_time" type="insight:stop_local_mean_solar_time" minOccurs="0" maxOccurs="1"> </xs:element>
+      <xs:element name="start_local_true_solar_time" type="insight:start_local_true_solar_time" minOccurs="0" maxOccurs="1"> </xs:element>
+      <xs:element name="stop_local_true_solar_time" type="insight:stop_local_true_solar_time" minOccurs="0" maxOccurs="1"> </xs:element>
+      <xs:element name="local_true_solar_time_sol" type="insight:local_true_solar_time_sol" minOccurs="0" maxOccurs="1"> </xs:element>
+      <xs:element name="start_solar_longitude" type="insight:start_solar_longitude" minOccurs="0" maxOccurs="1"> </xs:element>
+      <xs:element name="stop_solar_longitude" type="insight:stop_solar_longitude" minOccurs="0" maxOccurs="1"> </xs:element>
+      <xs:element name="mars_year" type="insight:mars_year" minOccurs="0" maxOccurs="1"> </xs:element>
+      <xs:element name="software_name" type="insight:software_name" minOccurs="0" maxOccurs="1"> </xs:element>
+      <xs:element name="software_version_id" type="insight:software_version_id" minOccurs="0" maxOccurs="1"> </xs:element>
+    </xs:sequence>
+    <!-- Begin assert statements for schematron - Enumerated Values -->
+    <!-- <xs:assert test="insight:mission_phase_name = ('ATLO', 'CRUISE', 'DEVELOPMENT', 'SURFACE MISSION', 'TEST')"/> -->
+    <!-- <xs:assert test="insight:product_type = ('ARK', 'ARM', 'ARO', 'BAY', 'CLM', 'CLR', 'DDD', 'DDL', 'DDS', 'DEM', 'DFF', 'DFL', 'DFS', 'DSE', 'DSG', 'DSL', 'DSP', 'DSR', 'DSS', 'EDR', 'EJP', 'ERP', 'GUH', 'GUS', 'IEF', 'IEP', 'ILC', 'ILM', 'ILP', 'ILT', 'IOF', 'IOI', 'ION', 'LANDER_COORD', 'LIN', 'MAR', 'MDS', 'MSK', 'MXY', 'RAD', 'RAD-calibrated', 'RAD-derived', 'RAD-raw', 'RAF', 'RAS', 'RDM', 'RDR', 'RIE', 'RIF', 'RNE', 'RNF', 'RNG', 'RNM', 'RNO', 'RNR', 'ROTATION_PARAMETERS', 'RSM', 'RUH', 'RUS', 'SHD', 'SHO', 'SLO', 'SLP', 'SMG', 'SMO', 'SNO', 'SNT', 'STATIL-calibrated', 'STATIL-raw', 'TAU', 'TDS', 'TEM-A-calibrated', 'TEM-P-calibrated', 'TEM-raw', 'TFH', 'TFS', 'TFW', 'TLM-raw', 'TNF', 'TRO', 'UIH', 'UIS', 'UIW', 'UUF', 'UUU', 'UVF', 'UVO', 'UVP', 'UVS', 'UVT', 'UVW', 'VVF', 'VVV', 'WEA', 'WSH', 'WSS', 'WWF', 'WWW', 'XXF', 'XXX', 'XYE', 'XYF', 'XYM', 'XYO', 'XYR', 'XYZ', 'YYF', 'YYY', 'ZIH', 'ZIS', 'ZIW', 'ZZF', 'ZZZ')"/> -->
+    <!-- End assert statements for schematron - Enumerated Values -->
+  </xs:complexType>
+
+  <xs:complexType name="SEIS_Instrument_Parameters">
+    <xs:annotation>
+      <xs:documentation>Attributes specific to the InSight Seismometer
+        data products</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="channel_name" type="insight:channel_name" minOccurs="1" maxOccurs="1"> </xs:element>
+      <xs:element name="measurement_type" type="insight:measurement_type" minOccurs="1" maxOccurs="1"> </xs:element>
+      <xs:element name="sampling_rate" type="insight:sampling_rate" minOccurs="1" maxOccurs="1"> </xs:element>
+      <xs:element name="measurement_duration" type="insight:measurement_duration" minOccurs="1" maxOccurs="1"> </xs:element>
+      <xs:element name="instrument_clock_start_count" type="insight:instrument_clock_start_count" minOccurs="1" maxOccurs="1"> </xs:element>
+    </xs:sequence>
+    <!-- Begin assert statements for schematron - Enumerated Values -->
+    <!-- <xs:assert test="insight:channel_name = ('SP_1', 'SP_2', 'SP_3', 'VBB_1_Position', 'VBB_1_Temperature', 'VBB_1_Velocity', 'VBB_2_Position', 'VBB_2_Temperature', 'VBB_2_Velocity', 'VBB_3_Position', 'VBB_3_Temperature', 'VBB_3_Velocity')"/> -->
+    <!-- <xs:assert test="insight:measurement_type = ('SP_Event', 'VBB_Continuous', 'VBB_Event')"/> -->
+    <!-- End assert statements for schematron - Enumerated Values -->
+  </xs:complexType>
+
+    <xs:annotation>
+      <xs:documentation>This section contains the simpleTypes that provide more constraints
+        than those at the base data type level. The simpleTypes defined here build on the base data
+        types. This is another component of the common dictionary and therefore falls within the
+        pds namespace.
+      </xs:documentation>
+    </xs:annotation>
+
+  <xs:simpleType name="channel_name">
+    <xs:annotation>
+      <xs:documentation>The SEED data products for the SEIS instrument
+        contain data from a single instrument channel. The channel_name
+        identifies which SEIS channel data are included in the SEED
+        file.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="pds:ASCII_Short_String_Collapsed">
+     <xs:minLength value="1"/>
+     <xs:maxLength value="255"/>
+	   </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="instrument_clock_start_count">
+    <xs:annotation>
+      <xs:documentation>The instrument_clock_start_count is the value of
+        the instrument clock at the beginning of an
+        observation.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="pds:ASCII_Short_String_Collapsed">
+     <xs:minLength value="1"/>
+     <xs:maxLength value="255"/>
+	   </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="local_true_solar_time_sol">
+    <xs:annotation>
+      <xs:documentation>The local_true_solar_time_sol element specifies
+        the number of solar days elapsed since a reference day (e.g. the
+        day on which a landing vehicle set down) for local true solar
+        time (LTST). Days are measured in rotations of the planet in
+        question from midnight to midnight. The reference day is '0', as
+        Landing day is Sol 0. If before Landing day, then value will be
+        less than or equal to '0' and can be negative.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="pds:ASCII_Integer">
+     <xs:minInclusive value="0"/>
+     <xs:maxInclusive value="9223372036854775807"/>
+	   </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="mars_year">
+    <xs:annotation>
+      <xs:documentation>The mars_year element specifies the number of
+        the Mars year relative to the reference date of April 11, 1955
+        (Mars solar longitude 0), which is defined as the start of Mars
+        year 1.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="pds:ASCII_NonNegative_Integer">
+    	<xs:pattern value='[0-9]+'/>
+     <xs:minInclusive value="0"/>
+     <xs:maxInclusive value="18446744073709551615"/>
+	   </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="measurement_duration">
+    <xs:annotation>
+      <xs:documentation>Measurement_duration indicates the length of
+        time covered by a given measurement.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="pds:ASCII_Real">
+    	<xs:pattern value='[-+]?[0-9]+(\.?[0-9]+)?([eE][-+]?[0-9]+)?'/>
+     <xs:minInclusive value="-1.7976931348623157e308"/>
+     <xs:maxInclusive value="1.7976931348623157e308"/>
+	   </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="measurement_type">
+    <xs:annotation>
+      <xs:documentation>Measurement_type indicates the seismometer (VBB
+        or SP) and whether the data were collected in continuous or
+        event mode used in a measurement.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="pds:ASCII_Short_String_Collapsed">
+     <xs:minLength value="1"/>
+     <xs:maxLength value="255"/>
+	   </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="mission_phase_name">
+    <xs:annotation>
+      <xs:documentation>The mission_phase_name identifies a time period
+        within the mission.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="pds:ASCII_Short_String_Preserved">
+     <xs:minLength value="1"/>
+     <xs:maxLength value="255"/>
+	   </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="product_type">
+    <xs:annotation>
+      <xs:documentation>The product_type identifies a group of data
+        products within a collection that have some property in common,
+        such as processing level, resolution, or instrument-specific
+        setting. </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="pds:ASCII_Short_String_Collapsed">
+     <xs:minLength value="1"/>
+     <xs:maxLength value="255"/>
+	   </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="release_number">
+    <xs:annotation>
+      <xs:documentation>Release_number is the number of a scheduled
+        release of InSight data from PDS. The first Insight data release
+        is Release 1. The release_number for a given product is always
+        the first release in which it appears, and does not change if
+        the product is revised later.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="pds:ASCII_Integer">
+     <xs:minInclusive value="1"/>
+     <xs:maxInclusive value="9223372036854775807"/>
+	   </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="sampling_rate">
+    <xs:annotation>
+      <xs:documentation>Sampling_rate specifics the rate (samples/time)
+        that data from an instrument were sampled and
+        recorded.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="pds:ASCII_Real">
+    	<xs:pattern value='[-+]?[0-9]+(\.?[0-9]+)?([eE][-+]?[0-9]+)?'/>
+     <xs:minInclusive value="-1.7976931348623157e308"/>
+     <xs:maxInclusive value="1.7976931348623157e308"/>
+	   </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="software_name">
+    <xs:annotation>
+      <xs:documentation>Software_name identifies the processing software
+        used to generate a data product.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="pds:ASCII_Short_String_Preserved">
+     <xs:minLength value="1"/>
+     <xs:maxLength value="255"/>
+	   </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="software_version_id">
+    <xs:annotation>
+      <xs:documentation>Software_version_id identifies the version of
+        the processing software used to generate a data
+        product.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="pds:ASCII_Short_String_Preserved">
+     <xs:minLength value="1"/>
+     <xs:maxLength value="255"/>
+	   </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="sol_number">
+    <xs:annotation>
+      <xs:documentation>Sol_number is the number of the Mars day on
+        which an observation was acquired. Landing day is Sol
+        0.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="pds:ASCII_Integer">
+     <xs:minInclusive value="0"/>
+     <xs:maxInclusive value="9223372036854775807"/>
+	   </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="spacecraft_clock_count_partition">
+    <xs:annotation>
+      <xs:documentation>The spacecraft_clock_count_partition provides
+        the clock partition active for the spacecraft_clock_start_count
+        and spacecraft_clock_stop_count attributes. This attribute may
+        be used when the spacecraft_clock values do not include a
+        partition number.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="pds:ASCII_Integer">
+     <xs:minInclusive value="1"/>
+     <xs:maxInclusive value="9223372036854775807"/>
+	   </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="spacecraft_clock_start_count">
+    <xs:annotation>
+      <xs:documentation>The spacecraft_clock_start_count is the value of
+        the spacecraft clock at the beginning of an observation. It
+        represents the number of ticks. If a fractional value is
+        present, it represents the number of 1/65536
+        ticks.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="pds:ASCII_Short_String_Collapsed">
+    	<xs:pattern value='([1-9]/)?[0-9]{1,10}(\-[0-9]{5})?'/>
+     <xs:minLength value="1"/>
+     <xs:maxLength value="18"/>
+	   </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="spacecraft_clock_stop_count">
+    <xs:annotation>
+      <xs:documentation>The spacecraft_clock_stop_count is the value of
+        the spacecraft clock at the end of an
+        observation.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="pds:ASCII_Short_String_Collapsed">
+    	<xs:pattern value='([1-9]/)?[0-9]{1,10}(\-[0-9]{5})?'/>
+     <xs:minLength value="1"/>
+     <xs:maxLength value="18"/>
+	   </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="start_local_mean_solar_time">
+    <xs:annotation>
+      <xs:documentation>Start_local_mean_solar_time is the local mean
+        solar time, as defined in the main PDS4 data dictionary, at the
+        beginning of an observation.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="pds:ASCII_Short_String_Collapsed">
+    	<xs:pattern value='(Sol\-)?[0-9]{1,5}M[0-2][0-9]:[0-5][0-9]:[0-5][0-9](\.[0-9]{1,5})?'/>
+     <xs:minLength value="10"/>
+     <xs:maxLength value="24"/>
+	   </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="start_local_true_solar_time">
+    <xs:annotation>
+      <xs:documentation>Start_local_true_solar_time is the local true
+        solar time, as defined in the main PDS4 data dictionary, at the
+        beginning of an observation.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="pds:ASCII_Short_String_Collapsed">
+    	<xs:pattern value='((Sol\-)?[0-9]{1,5} )?[0-2][0-9]:[0-5][0-9]:[0-5][0-9](\.[0-9]{1,5})?'/>
+     <xs:minLength value="8"/>
+     <xs:maxLength value="24"/>
+	   </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="start_sol_number">
+    <xs:annotation>
+      <xs:documentation>Start_sol_number is the number of the Mars day
+        on which a multiple-day observation was begun. Landing day is
+        Sol 0.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="pds:ASCII_Integer">
+     <xs:minInclusive value="0"/>
+     <xs:maxInclusive value="9223372036854775807"/>
+	   </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="start_solar_longitude_WO_Units">
+    <xs:restriction base="pds:ASCII_Real">
+    	<xs:pattern value='[-+]?[0-9]+(\.?[0-9]+)?([eE][-+]?[0-9]+)?'/>
+     <xs:minInclusive value="0"/>
+     <xs:maxInclusive value="360"/>
+	   </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="start_solar_longitude">
+    <xs:annotation>
+      <xs:documentation>Start_solar_longitude is the solar longitude, as
+        defined in the main PDS4 data dictionary, at the beginning of an
+        observation.</xs:documentation>
+    </xs:annotation>
+    <xs:simpleContent>
+      <xs:extension base="insight:start_solar_longitude_WO_Units">
+        <xs:attribute name="unit" type="pds:Units_of_Angle" use="required" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:simpleType name="stop_local_mean_solar_time">
+    <xs:annotation>
+      <xs:documentation>Stop_local_mean_solar_time is the local mean
+        solar time, as defined in the main PDS4 data dictionary, at the
+        end of an observation.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="pds:ASCII_Short_String_Collapsed">
+    	<xs:pattern value='(Sol\-)?[0-9]{1,5}M[0-2][0-9]:[0-5][0-9]:[0-5][0-9](\.[0-9]{1,5})?'/>
+     <xs:minLength value="10"/>
+     <xs:maxLength value="24"/>
+	   </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="stop_local_true_solar_time">
+    <xs:annotation>
+      <xs:documentation>Stop_local_true_solar_time is the local true
+        solar time, as defined in the main PDS4 data dictionary, at the
+        end of an observation.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="pds:ASCII_Short_String_Collapsed">
+    	<xs:pattern value='((Sol\-)?[0-9]{1,5} )?[0-2][0-9]:[0-5][0-9]:[0-5][0-9](\.[0-9]{1,5})?'/>
+     <xs:minLength value="8"/>
+     <xs:maxLength value="24"/>
+	   </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="stop_sol_number">
+    <xs:annotation>
+      <xs:documentation>Stop_sol_number is the number of the Mars day on
+        which a multiple-day observation was ended. Landing day is Sol
+        0.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="pds:ASCII_Integer">
+     <xs:minInclusive value="0"/>
+     <xs:maxInclusive value="9223372036854775807"/>
+	   </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="stop_solar_longitude_WO_Units">
+    <xs:restriction base="pds:ASCII_Real">
+    	<xs:pattern value='[-+]?[0-9]+(\.?[0-9]+)?([eE][-+]?[0-9]+)?'/>
+     <xs:minInclusive value="0"/>
+     <xs:maxInclusive value="360"/>
+	   </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="stop_solar_longitude">
+    <xs:annotation>
+      <xs:documentation>Stop_solar_longitude is the solar longitude, as
+        defined in the main PDS4 data dictionary, at the end of an
+        observation.</xs:documentation>
+    </xs:annotation>
+    <xs:simpleContent>
+      <xs:extension base="insight:stop_solar_longitude_WO_Units">
+        <xs:attribute name="unit" type="pds:Units_of_Angle" use="required" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>
