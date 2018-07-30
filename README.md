@@ -7,6 +7,7 @@ The InSight mission dictionary contains classes that describe aspects of the InS
 - [1.0.0.0](src/1.0.0.0)
 - [1.8.1.0](src/1.8.1.0)
 - [1.8.2.0](src/1.8.2.0)
+- [1.8.3.0](src/1.8.3.0)
 
 ## Builds
 
