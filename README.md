@@ -8,6 +8,7 @@ The InSight mission dictionary contains classes that describe aspects of the InS
 - [1.8.1.0](src/1.8.1.0)
 - [1.8.2.0](src/1.8.2.0)
 - [1.8.3.0](src/1.8.3.0)
+- [1.8.4.0](src/1.8.4.0)
 
 ## Builds
 
@@ -19,6 +20,7 @@ This LDD has been built for the following versions of the PDS4 information model
 - [1.8.0.0](build/1.8.0.0)
 - [1.10.0.0](build/1.10.0.0)
 - [1.10.1.0](build/1.10.1.0)
+- [1.11.0.0](build/1.11.0.0)
 	
 ## Notes
 
