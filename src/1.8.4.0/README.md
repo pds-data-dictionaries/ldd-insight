@@ -115,24 +115,11 @@ Units: undefined
 
 Name                                    | Description
 --------------------------------------- | ----------------------------
-ATLO | The ATLO mission phase (Assembly, Test, and Launch Operations) is the 
-          time of spacecraft and instrument assembly and test. During this phase data products 
-          are generated using flight hardware. They are usually not part of the final PDS 
-          archive but may be used for testing and peer review.
-CRUISE | The cruise mission phase is from the time of escape from Earth's orbit
-          through the time of entry into Mars' orbit. Some data products may be generated
-          during this time, including instrument checkout data.
-DEVELOPMENT | The development mission phase refers to the period of data processing 
-          software development and testing, before instruments are integrated with the spacecraft.
-          Data products generated during this phase are usually not part of the final PDS archive
-          but may be used for testing and peer review.
-SURFACE MISSION | The surface mission phase is the time from arrival at Mars through the
-          end of surface operations, including the primary mission and any extended missions 
-          that may take place.
-TEST | The test mission phase is not a time period but a placeholder for the 
-          mission_phase_name value, used for data products generating during all project tests
-          such as ORTs, SVTs and thread tests. Data products generated in this way are usually 
-          not part of the final PDS archive but may be used for testing and peer review.
+ATLO | The ATLO mission phase (Assembly, Test, and Launch Operations) is the time of spacecraft and instrument assembly and test. During this phase data products are generated using flight hardware. They are usually not part of the final PDS archive but may be used for testing and peer review.
+CRUISE | The cruise mission phase is from the time of escape from Earth's orbit through the time of entry into Mars' orbit. Some data products may be generated during this time, including instrument checkout data.
+DEVELOPMENT | The development mission phase refers to the period of data processing software development and testing, before instruments are integrated with the spacecraft. Data products generated during this phase are usually not part of the final PDS archive but may be used for testing and peer review.
+SURFACE MISSION | The surface mission phase is the time from arrival at Mars through the end of surface operations, including the primary mission and any extended missions that may take place.
+TEST | The test mission phase is not a time period but a placeholder for the mission_phase_name value, used for data products generating during all project tests such as ORTs, SVTs and thread tests. Data products generated in this way are usually not part of the final PDS archive but may be used for testing and peer review.
 
 
 ### product_type
