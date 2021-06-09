@@ -1,0 +1,2404 @@
+[
+  {
+    "dataDictionary": {
+      "Title": "PDS4 Data Dictionary" ,
+      "IM Version": "1.11.0.0" ,
+      "LDD Version": "1.9.0.0" ,
+      "Date": "Wed Jun 09 17:19:02 UTC 2021" ,
+      "Description": "This document is a dump of the contents of the PDS4 Data Dictionary" ,
+      "namespaces": ["pds:", "insight:"] ,
+      "classDictionary": [
+        {
+          "class": {
+            "identifier": "0001_NASA_PDS_1.insight.ASCII_Equivalent" ,
+            "title": "ASCII_Equivalent" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "insight" ,
+            "steward": "geo" ,
+            "versionId": "1.0.0.0" ,
+            "isAbstract": "false" ,
+            "isDeprecated": "false" ,
+            "description": " The ASCII_Equivalent class contains attributes that identify and locate the ASCII data product equivalent to a given SEIS SEED data product. "
+              , "associationList": [
+             {"association": {
+                "identifier": "0001_NASA_PDS_1.insight.ASCII_Equivalent.insight.ascii_equivalent_file_name" ,
+                "title": "ascii_equivalent_file_name" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "1" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1010" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.insight.ASCII_Equivalent.insight.ascii_equivalent_file_name"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.insight.ASCII_Equivalent.insight.ASCII_Equivalent_Internal_Reference" ,
+                "title": "ASCII_Equivalent_Internal_Reference" ,
+                "assocType": "component_of" ,
+                "isAttribute": "false" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "1" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1030" ,
+                "classId": [
+                  "0001_NASA_PDS_1.insight.ASCII_Equivalent.pds.Internal_Reference"
+                 ]
+              }
+            }
+           ]
+          }
+        }
+      , {
+          "class": {
+            "identifier": "0001_NASA_PDS_1.insight.ASCII_Equivalent.pds.Internal_Reference" ,
+            "title": "ASCII_Equivalent_Internal_Reference" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "insight" ,
+            "steward": "geo" ,
+            "versionId": "1.0.0.0" ,
+            "isAbstract": "false" ,
+            "isDeprecated": "false" ,
+            "description": "The Internal_Reference class is used to cross-reference other products in PDS4-compliant registries of PDS and its recognized international partners."
+              , "associationList": [
+             {"association": {
+                "identifier": "0001_NASA_PDS_1.insight.ASCII_Equivalent.insight.ASCII_Equivalent_reference_type" ,
+                "title": "reference_type" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "1" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1020" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.insight.ASCII_Equivalent.insight.ASCII_Equivalent_reference_type"
+                 ]
+              }
+            }
+           ]
+          }
+        }
+      , {
+          "class": {
+            "identifier": "0001_NASA_PDS_1.insight.Metadata_Location" ,
+            "title": "Metadata_Location" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "insight" ,
+            "steward": "geo" ,
+            "versionId": "1.0.0.0" ,
+            "isAbstract": "false" ,
+            "isDeprecated": "false" ,
+            "description": " The Metadata_Location class contains attributes that identify and locate the metadata associated with a given SEIS data product. "
+              , "associationList": [
+             {"association": {
+                "identifier": "0001_NASA_PDS_1.insight.Metadata_Location.insight.metadata_file_name" ,
+                "title": "metadata_file_name" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "1" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1010" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.insight.Metadata_Location.insight.metadata_file_name"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.insight.Metadata_Location.insight.Metadata_Location_Internal_Reference" ,
+                "title": "Metadata_Location_Internal_Reference" ,
+                "assocType": "component_of" ,
+                "isAttribute": "false" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "1" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1030" ,
+                "classId": [
+                  "0001_NASA_PDS_1.insight.Metadata_Location.pds.Internal_Reference"
+                 ]
+              }
+            }
+           ]
+          }
+        }
+      , {
+          "class": {
+            "identifier": "0001_NASA_PDS_1.insight.Metadata_Location.pds.Internal_Reference" ,
+            "title": "Metadata_Location_Internal_Reference" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "insight" ,
+            "steward": "geo" ,
+            "versionId": "1.0.0.0" ,
+            "isAbstract": "false" ,
+            "isDeprecated": "false" ,
+            "description": "The Internal_Reference class is used to cross-reference other products in PDS4-compliant registries of PDS and its recognized international partners."
+              , "associationList": [
+             {"association": {
+                "identifier": "0001_NASA_PDS_1.insight.Metadata_Location.insight.Metadata_Location_reference_type" ,
+                "title": "reference_type" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "1" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1020" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.insight.Metadata_Location.insight.Metadata_Location_reference_type"
+                 ]
+              }
+            }
+           ]
+          }
+        }
+      , {
+          "class": {
+            "identifier": "0001_NASA_PDS_1.insight.Observation_Information" ,
+            "title": "Observation_Information" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "insight" ,
+            "steward": "geo" ,
+            "versionId": "1.0.0.0" ,
+            "isAbstract": "false" ,
+            "isDeprecated": "false" ,
+            "description": "The Observation_Information class provides information about a science observation."
+              , "associationList": [
+             {"association": {
+                "identifier": "0001_NASA_PDS_1.insight.Observation_Information.insight.release_number" ,
+                "title": "release_number" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1010" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.insight.Observation_Information.insight.release_number"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.insight.Observation_Information.insight.mission_phase_name" ,
+                "title": "mission_phase_name" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1020" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.insight.Observation_Information.insight.mission_phase_name"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.insight.Observation_Information.insight.product_type" ,
+                "title": "product_type" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1030" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.insight.Observation_Information.insight.product_type"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.insight.Observation_Information.insight.spacecraft_clock_start_count" ,
+                "title": "spacecraft_clock_start_count" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1040" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.insight.Observation_Information.insight.spacecraft_clock_start_count"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.insight.Observation_Information.insight.spacecraft_clock_stop_count" ,
+                "title": "spacecraft_clock_stop_count" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1050" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.insight.Observation_Information.insight.spacecraft_clock_stop_count"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.insight.Observation_Information.insight.spacecraft_clock_count_partition" ,
+                "title": "spacecraft_clock_count_partition" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1060" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.insight.Observation_Information.insight.spacecraft_clock_count_partition"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.insight.Observation_Information.insight.sol_number" ,
+                "title": "sol_number" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1070" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.insight.Observation_Information.insight.sol_number"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.insight.Observation_Information.insight.start_sol_number" ,
+                "title": "start_sol_number" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1080" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.insight.Observation_Information.insight.start_sol_number"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.insight.Observation_Information.insight.stop_sol_number" ,
+                "title": "stop_sol_number" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1090" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.insight.Observation_Information.insight.stop_sol_number"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.insight.Observation_Information.insight.start_local_mean_solar_time" ,
+                "title": "start_local_mean_solar_time" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1100" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.insight.Observation_Information.insight.start_local_mean_solar_time"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.insight.Observation_Information.insight.stop_local_mean_solar_time" ,
+                "title": "stop_local_mean_solar_time" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1110" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.insight.Observation_Information.insight.stop_local_mean_solar_time"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.insight.Observation_Information.insight.start_local_true_solar_time" ,
+                "title": "start_local_true_solar_time" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1120" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.insight.Observation_Information.insight.start_local_true_solar_time"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.insight.Observation_Information.insight.stop_local_true_solar_time" ,
+                "title": "stop_local_true_solar_time" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1130" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.insight.Observation_Information.insight.stop_local_true_solar_time"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.insight.Observation_Information.insight.local_true_solar_time_sol" ,
+                "title": "local_true_solar_time_sol" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1140" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.insight.Observation_Information.insight.local_true_solar_time_sol"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.insight.Observation_Information.insight.aobt_clock_start_count" ,
+                "title": "aobt_clock_start_count" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1150" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.insight.Observation_Information.insight.aobt_clock_start_count"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.insight.Observation_Information.insight.aobt_clock_stop_count" ,
+                "title": "aobt_clock_stop_count" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1160" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.insight.Observation_Information.insight.aobt_clock_stop_count"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.insight.Observation_Information.insight.lobt_clock_start_count" ,
+                "title": "lobt_clock_start_count" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1170" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.insight.Observation_Information.insight.lobt_clock_start_count"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.insight.Observation_Information.insight.lobt_clock_stop_count" ,
+                "title": "lobt_clock_stop_count" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1180" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.insight.Observation_Information.insight.lobt_clock_stop_count"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.insight.Observation_Information.insight.start_solar_longitude" ,
+                "title": "start_solar_longitude" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1190" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.insight.Observation_Information.insight.start_solar_longitude"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.insight.Observation_Information.insight.stop_solar_longitude" ,
+                "title": "stop_solar_longitude" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1200" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.insight.Observation_Information.insight.stop_solar_longitude"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.insight.Observation_Information.insight.mars_year" ,
+                "title": "mars_year" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1210" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.insight.Observation_Information.insight.mars_year"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.insight.Observation_Information.insight.software_name" ,
+                "title": "software_name" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1220" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.insight.Observation_Information.insight.software_name"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.insight.Observation_Information.insight.software_version_id" ,
+                "title": "software_version_id" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1230" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.insight.Observation_Information.insight.software_version_id"
+                 ]
+              }
+            }
+           ]
+          }
+        }
+      , {
+          "class": {
+            "identifier": "0001_NASA_PDS_1.insight.SEED_Equivalent" ,
+            "title": "SEED_Equivalent" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "insight" ,
+            "steward": "geo" ,
+            "versionId": "1.0.0.0" ,
+            "isAbstract": "false" ,
+            "isDeprecated": "false" ,
+            "description": " The SEED_Equivalent class contains attributes that identify and locate the SEED data product equivalent to a given SEIS ASCII data product. "
+              , "associationList": [
+             {"association": {
+                "identifier": "0001_NASA_PDS_1.insight.SEED_Equivalent.insight.seed_file_name" ,
+                "title": "seed_file_name" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "1" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1010" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.insight.SEED_Equivalent.insight.seed_file_name"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.insight.SEED_Equivalent.insight.SEED_Equivalent_Internal_Reference" ,
+                "title": "SEED_Equivalent_Internal_Reference" ,
+                "assocType": "component_of" ,
+                "isAttribute": "false" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "1" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1030" ,
+                "classId": [
+                  "0001_NASA_PDS_1.insight.SEED_Equivalent.pds.Internal_Reference"
+                 ]
+              }
+            }
+           ]
+          }
+        }
+      , {
+          "class": {
+            "identifier": "0001_NASA_PDS_1.insight.SEED_Equivalent.pds.Internal_Reference" ,
+            "title": "SEED_Equivalent_Internal_Reference" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "insight" ,
+            "steward": "geo" ,
+            "versionId": "1.0.0.0" ,
+            "isAbstract": "false" ,
+            "isDeprecated": "false" ,
+            "description": "The Internal_Reference class is used to cross-reference other products in PDS4-compliant registries of PDS and its recognized international partners."
+              , "associationList": [
+             {"association": {
+                "identifier": "0001_NASA_PDS_1.insight.SEED_Equivalent.insight.SEED_Equivalent_reference_type" ,
+                "title": "reference_type" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "1" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1020" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.insight.SEED_Equivalent.insight.SEED_Equivalent_reference_type"
+                 ]
+              }
+            }
+           ]
+          }
+        }
+      , {
+          "class": {
+            "identifier": "0001_NASA_PDS_1.insight.SEIS_Instrument_Parameters" ,
+            "title": "SEIS_Instrument_Parameters" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "insight" ,
+            "steward": "geo" ,
+            "versionId": "1.0.0.0" ,
+            "isAbstract": "false" ,
+            "isDeprecated": "false" ,
+            "description": "Attributes specific to the InSight Seismometer data products"
+              , "associationList": [
+             {"association": {
+                "identifier": "0001_NASA_PDS_1.insight.SEIS_Instrument_Parameters.insight.seis_data_type" ,
+                "title": "seis_data_type" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "1" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1010" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.insight.SEIS_Instrument_Parameters.insight.seis_data_type"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.insight.SEIS_Instrument_Parameters.insight.seis_waveform_type" ,
+                "title": "seis_waveform_type" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1020" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.insight.SEIS_Instrument_Parameters.insight.seis_waveform_type"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.insight.SEIS_Instrument_Parameters.insight.channel_name" ,
+                "title": "channel_name" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1060" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.insight.SEIS_Instrument_Parameters.insight.channel_name"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.insight.SEIS_Instrument_Parameters.insight.signal_name" ,
+                "title": "signal_name" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1070" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.insight.SEIS_Instrument_Parameters.insight.signal_name"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.insight.SEIS_Instrument_Parameters.insight.sampling_rate" ,
+                "title": "sampling_rate" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1080" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.insight.SEIS_Instrument_Parameters.insight.sampling_rate"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.insight.SEIS_Instrument_Parameters.insight.sample_count" ,
+                "title": "sample_count" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1090" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.insight.SEIS_Instrument_Parameters.insight.sample_count"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.insight.SEIS_Instrument_Parameters.insight.Metadata_Location" ,
+                "title": "Metadata_Location" ,
+                "assocType": "component_of" ,
+                "isAttribute": "false" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1030" ,
+                "classId": [
+                  "0001_NASA_PDS_1.insight.Metadata_Location"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.insight.SEIS_Instrument_Parameters.insight.ASCII_Equivalent" ,
+                "title": "ASCII_Equivalent" ,
+                "assocType": "component_of" ,
+                "isAttribute": "false" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1040" ,
+                "classId": [
+                  "0001_NASA_PDS_1.insight.ASCII_Equivalent"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.insight.SEIS_Instrument_Parameters.insight.SEED_Equivalent" ,
+                "title": "SEED_Equivalent" ,
+                "assocType": "component_of" ,
+                "isAttribute": "false" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1050" ,
+                "classId": [
+                  "0001_NASA_PDS_1.insight.SEED_Equivalent"
+                 ]
+              }
+            }
+           ]
+          }
+        }
+      ]
+    , "attributeDictionary": [
+        {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.insight.ASCII_Equivalent.insight.ascii_equivalent_file_name" ,
+            "title": "ascii_equivalent_file_name" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "insight" ,
+            "steward": "geo" ,
+            "versionId": "1.11" ,
+            "description": " SEIS data products are archived in their native SEED format and in a PDS-compatible ASCII format. The ascii_equivalent_file_name attribute gives the name of the file that is the ASCII equivalent of a SEED format file. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_File_Name" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_File_Name" ,
+            "minimumCharacters": "1" ,
+            "maximumCharacters": "255" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.insight.Metadata_Location.insight.metadata_file_name" ,
+            "title": "metadata_file_name" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "insight" ,
+            "steward": "geo" ,
+            "versionId": "1.11" ,
+            "description": " SEIS observations are stored with the seismic data from the instrument in one file (mini-SEED or GeoCSV format) and the metadata for the measurements in another file (dataless SEED or StationXML format). The metadata_file_name attribute gives the name of the file containing the metadata associated with a given data file. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_File_Name" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_File_Name" ,
+            "minimumCharacters": "1" ,
+            "maximumCharacters": "255" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.insight.Observation_Information.insight.aobt_clock_start_count" ,
+            "title": "aobt_clock_start_count" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "insight" ,
+            "steward": "geo" ,
+            "versionId": "1.11" ,
+            "description": "The aobt_clock_start_count specifies the number of 1\/1024 seconds recorded on the APSS On Board Time clock at the beginning of an observation." ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_NonNegative_Integer" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_NonNegative_Integer" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "0" ,
+            "maximumValue": "18446744073709551615" ,
+            "pattern": "[0-9]+" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.insight.Observation_Information.insight.aobt_clock_stop_count" ,
+            "title": "aobt_clock_stop_count" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "insight" ,
+            "steward": "geo" ,
+            "versionId": "1.11" ,
+            "description": "The aobt_clock_stop_count specifies the number of 1\/1024 seconds recorded on the APSS On Board Time clock at the end of an observation." ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_NonNegative_Integer" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_NonNegative_Integer" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "0" ,
+            "maximumValue": "18446744073709551615" ,
+            "pattern": "[0-9]+" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.insight.Observation_Information.insight.lobt_clock_start_count" ,
+            "title": "lobt_clock_start_count" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "insight" ,
+            "steward": "geo" ,
+            "versionId": "1.11" ,
+            "description": "The lobt_clock_start_count specifies the number of 1\/1024 seconds recorded on the Lander On Board Time clock at the beginning of an observation." ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_NonNegative_Integer" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_NonNegative_Integer" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "0" ,
+            "maximumValue": "18446744073709551615" ,
+            "pattern": "[0-9]+" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.insight.Observation_Information.insight.lobt_clock_stop_count" ,
+            "title": "lobt_clock_stop_count" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "insight" ,
+            "steward": "geo" ,
+            "versionId": "1.11" ,
+            "description": "The lobt_clock_stop_count specifies the number of 1\/1024 seconds recorded on the Lander On Board Time clock at the end of an observation." ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_NonNegative_Integer" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_NonNegative_Integer" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "0" ,
+            "maximumValue": "18446744073709551615" ,
+            "pattern": "[0-9]+" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.insight.Observation_Information.insight.local_true_solar_time_sol" ,
+            "title": "local_true_solar_time_sol" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "insight" ,
+            "steward": "geo" ,
+            "versionId": "1.11" ,
+            "description": "The local_true_solar_time_sol element specifies the number of solar days elapsed since a reference day (e.g. the day on which a landing vehicle set down) for local true solar time (LTST). Days are measured in rotations of the planet in question from midnight to midnight. The reference day is '0', as Landing day is Sol 0. If before Landing day, then value will be less than or equal to '0' and can be negative." ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Integer" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Integer" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "0" ,
+            "maximumValue": "9223372036854775807" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.insight.Observation_Information.insight.mars_year" ,
+            "title": "mars_year" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "insight" ,
+            "steward": "geo" ,
+            "versionId": "1.11" ,
+            "description": "The mars_year element specifies the number of the Mars year relative to the reference date of April 11, 1955 (Mars solar longitude 0), which is defined as the start of Mars year 1." ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_NonNegative_Integer" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_NonNegative_Integer" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "0" ,
+            "maximumValue": "18446744073709551615" ,
+            "pattern": "[0-9]+" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.insight.Observation_Information.insight.mission_phase_name" ,
+            "title": "mission_phase_name" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "insight" ,
+            "steward": "geo" ,
+            "versionId": "1.11" ,
+            "description": "The mission_phase_name identifies a time period within the mission." ,
+            "isNillable": "false" ,
+            "isEnumerated": "true" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Short_String_Preserved" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Short_String_Preserved" ,
+            "minimumCharacters": "1" ,
+            "maximumCharacters": "255" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          , "PermissibleValueList": [
+              {"PermissibleValue": {
+                  "value": "ATLO" ,
+                  "valueMeaning": "The ATLO mission phase (Assembly, Test, and Launch Operations) is the time of spacecraft and instrument assembly and test. During this phase data products are generated using flight hardware. They are usually not part of the final PDS archive but may be used for testing and peer review. " ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "CRUISE" ,
+                  "valueMeaning": "The cruise mission phase is from the time of escape from Earth's orbit through the time of entry into Mars' orbit. Some data products may be generated during this time, including instrument checkout data." ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "DEVELOPMENT" ,
+                  "valueMeaning": "The development mission phase refers to the period of data processing software development and testing, before instruments are integrated with the spacecraft. Data products generated during this phase are usually not part of the final PDS archive but may be used for testing and peer review." ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "SURFACE MISSION" ,
+                  "valueMeaning": "The surface mission phase is the time from arrival at Mars through the end of surface operations, including the primary mission and any extended missions that may take place." ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "TEST" ,
+                  "valueMeaning": "The test mission phase is not a time period but a placeholder for the mission_phase_name value, used for data products generating during all project tests such as ORTs, SVTs and thread tests. Data products generated in this way are usually not part of the final PDS archive but may be used for testing and peer review." ,
+                  "isDeprecated": "false"
+                }
+             }
+           ]
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.insight.Observation_Information.insight.product_type" ,
+            "title": "product_type" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "insight" ,
+            "steward": "geo" ,
+            "versionId": "1.11" ,
+            "description": "The product_type identifies a group of data products within a collection that have some property in common, such as processing level, resolution, or instrument-specific setting. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "true" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Short_String_Collapsed" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Short_String_Collapsed" ,
+            "minimumCharacters": "1" ,
+            "maximumCharacters": "255" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          , "PermissibleValueList": [
+              {"PermissibleValue": {
+                  "value": "ARK" ,
+                  "valueMeaning": "Insight Camera data. Arm Reachability Mask" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "ARM" ,
+                  "valueMeaning": "Insight Camera data. Arm Reachability" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "ARO" ,
+                  "valueMeaning": "Insight Camera data. Arm Reachability with overlay" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "BAY" ,
+                  "valueMeaning": "Insight Camera data. Bayer pattern (identical to EDR except for Bayer pattern extract)" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "CLM" ,
+                  "valueMeaning": "Insight Camera data. Color-calibrated image, masked" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "CLR" ,
+                  "valueMeaning": "Insight Camera data. Color-calibrated image" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "DDD" ,
+                  "valueMeaning": "Insight Camera data. Stereo Delta Disparity (2-band, true disparity offset)" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "DDL" ,
+                  "valueMeaning": "Insight Camera data. Stereo Delta Disparity Line (single-band)" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "DDS" ,
+                  "valueMeaning": "Insight Camera data. Stereo Delta Disparity Sample (single-band)" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "DEM" ,
+                  "valueMeaning": "Insight Camera data. Digital Elevation Model. Identical to ZZZ except positive is up." ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "DFF" ,
+                  "valueMeaning": "Insight Camera data. Stereo First-stage Disparity Final" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "DFL" ,
+                  "valueMeaning": "Insight Camera data. Stereo First-stage Disparity Line" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "DFS" ,
+                  "valueMeaning": "Insight Camera data. Stereo First-stage Disparity Sample" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "DSE" ,
+                  "valueMeaning": "Insight Camera data. Stereo Disparity Error Metric" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "DSG" ,
+                  "valueMeaning": "Insight Camera data. Stereo Disparity Grid" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "DSL" ,
+                  "valueMeaning": "Insight Camera data. Stereo Disparity of Lines (single-band)" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "DSP" ,
+                  "valueMeaning": "Insight Camera data. Stereo Disparity Final" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "DSR" ,
+                  "valueMeaning": "Insight Camera data. Stereo Disparity Raw" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "DSS" ,
+                  "valueMeaning": "Insight Camera data. Stereo Disparity of Samples (single-band)" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "Dataless-SEED" ,
+                  "valueMeaning": "Insight SEIS product containing seismic metadata in SEED format." ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "EDR" ,
+                  "valueMeaning": "Experiment Data Record. Lowest processing level" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "EJP" ,
+                  "valueMeaning": "Insight Camera data. Original JPEG as received from the lander." ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "ERP" ,
+                  "valueMeaning": "Insight Camera data. Reference Pixel" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "GUH" ,
+                  "valueMeaning": "Insight Camera data. Overall goodness map for HP3" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "GUS" ,
+                  "valueMeaning": "Insight Camera data. Overall goodness map for SEIS\/WTS" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "GeoCSV" ,
+                  "valueMeaning": "Insight SEIS product containing seismic data in an ASCII table in GeoCSV format." ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "IDA_History" ,
+                  "valueMeaning": "Insight Deployment Arm History Ancillary Data" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "IDA_Parameters" ,
+                  "valueMeaning": "Insight Deployment Arm Parameters Ancillary Data" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "IDA_SciHi" ,
+                  "valueMeaning": "Insight Deployment Arm High Priority Science\/Engineering Data" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "IDA_SciLo" ,
+                  "valueMeaning": "Insight Deployment Arm Low Priority Science\/Engineering Data" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "IDA_Status" ,
+                  "valueMeaning": "Insight Deployment Arm Status Ancillary Data" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "IDA_Video" ,
+                  "valueMeaning": "Insight Deployment Arm Status Ancillary Data" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "IEF" ,
+                  "valueMeaning": "Insight Camera data. Incidence, Emission, Phase angles Filled" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "IEP" ,
+                  "valueMeaning": "Insight Camera data. Incidence, Emission, Phase angles" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "ILC" ,
+                  "valueMeaning": "Insight Camera data. Inverse lookup table (ILUT) with corrections such as de-spike" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "ILM" ,
+                  "valueMeaning": "Insight Camera data. Inverse Lookup Tabel (ILT), masked" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "ILP" ,
+                  "valueMeaning": "Insight Camera data. Inverse lookup table (ILUT) with pointing correction applied" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "ILT" ,
+                  "valueMeaning": "Insight Camera data. Inverse lookup table (ILUT)" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "IOF" ,
+                  "valueMeaning": "Insight Camera data. Rad-corrected IOF radiance factor, float" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "IOI" ,
+                  "valueMeaning": "Insight Camera data. Rad-corrected IOF radiance factor, integer" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "ION" ,
+                  "valueMeaning": "DSN TRK 2-23 ionosphere calibration data" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "LANDER_COORD" ,
+                  "valueMeaning": "InSIGHT RISE derived data. Lander coordinates." ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "LIN" ,
+                  "valueMeaning": "Insight Camera data. CAHV-linearized (identical to EDR except for Geometry type)" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "MAR" ,
+                  "valueMeaning": "Insight Camera data. Arm Reachability Mask File" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "MDS" ,
+                  "valueMeaning": "Insight Camera data. Stereo Disparity Mask File" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "MSK" ,
+                  "valueMeaning": "Insight Camera data. Image Mask File" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "MXY" ,
+                  "valueMeaning": "Insight Camera data. XYZ Mask File" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "Mini-SEED" ,
+                  "valueMeaning": "Insight SEIS product containing seismic data in mini-SEED format." ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "RAD" ,
+                  "valueMeaning": "Insight Camera data. Rad-corrected absolute radiance units, integer" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "RAD-calibrated" ,
+                  "valueMeaning": "HP3\/RAD calibrated radiometer data" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "RAD-derived" ,
+                  "valueMeaning": "HP3\/RAD derived radiometer data" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "RAD-raw" ,
+                  "valueMeaning": "HP3\/RAD raw radiometer data" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "RAF" ,
+                  "valueMeaning": "Insight Camera data. Rad-corrected absolute radiance units, float" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "RAS" ,
+                  "valueMeaning": "Insight Camera data. Rad-corrected absolute radiance units, scaled to 12-bit" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "RDM" ,
+                  "valueMeaning": "Insight Camera data. Rad-corrected radiance (RAD), masked" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "RDR" ,
+                  "valueMeaning": "Reduced Data Record, a general term for any processing level above EDR." ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "RIE" ,
+                  "valueMeaning": "Insight Camera data. Rad-corrected for Instrument Effects only, integer DN" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "RIF" ,
+                  "valueMeaning": "Insight Camera data. Rad-corrected for Instrument Effects only, float" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "RNE" ,
+                  "valueMeaning": "Insight Camera data. Range Error Metric" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "RNF" ,
+                  "valueMeaning": "Insight Camera data. Range Filled" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "RNG" ,
+                  "valueMeaning": "Insight Camera data. Range from Camera" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "RNM" ,
+                  "valueMeaning": "Insight Camera data. Range from Camera, Masked" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "RNO" ,
+                  "valueMeaning": "Insight Camera data. Range with Overlay" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "RNR" ,
+                  "valueMeaning": "Insight Camera data. Range from Rover Nav frame origin" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "ROTATION_PARAMETERS" ,
+                  "valueMeaning": "Insight RISE derived data. Mars rotation parameters." ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "RSM" ,
+                  "valueMeaning": "Insight Camera data. Rad-corrected scaled radiance (RAS), masked" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "RUH" ,
+                  "valueMeaning": "Insight Camera data. Surface Roughness map for HP3" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "RUS" ,
+                  "valueMeaning": "Insight Camera data. Surface Roughness map for SEIS\/WTS" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "SHD" ,
+                  "valueMeaning": "Insight Camera data. Slope Heading Map" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "SHO" ,
+                  "valueMeaning": "Insight Camera data. Slope Heading with Overlay" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "SLO" ,
+                  "valueMeaning": "Insight Camera data. Slope with Overlay" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "SLP" ,
+                  "valueMeaning": "Insight Camera data. Slope" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "SMG" ,
+                  "valueMeaning": "Insight Camera data. Slope Magnitude" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "SMO" ,
+                  "valueMeaning": "Insight Camera data. Slope Magnitude with Overlay" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "SNO" ,
+                  "valueMeaning": "Insight Camera data. Slope Northerly Tilt with Overlay" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "SNT" ,
+                  "valueMeaning": "Insight Camera data. Slope Northerly Tilt" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "STATIL-calibrated" ,
+                  "valueMeaning": "HP3\/RAD calibrated static tilt data" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "STATIL-raw" ,
+                  "valueMeaning": "HP3\/RAD raw static tilt data" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "StationXML" ,
+                  "valueMeaning": "Insight SEIS product containing seismic metadata in StationXML format." ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "TAU" ,
+                  "valueMeaning": "Insight Camera data. Tau report" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "TDM" ,
+                  "valueMeaning": "DSN Tracking Data Message data" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "TDS" ,
+                  "valueMeaning": "Insight Camera data. Delta Tilt map for SEIS\/WTS" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "TEM-A-calibrated" ,
+                  "valueMeaning": "HP3\/RAD calibrated active temperature data" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "TEM-P-calibrated" ,
+                  "valueMeaning": "HP3\/RAD calibrated passive temperature data" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "TEM-calibrated" ,
+                  "valueMeaning": "HP3\/RAD calibrated active and passive temperature data" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "TEM-raw" ,
+                  "valueMeaning": "HP3\/RAD raw temperature data" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "TFH" ,
+                  "valueMeaning": "Insight Camera data. Tilt map for HP3" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "TFS" ,
+                  "valueMeaning": "Insight Camera data. Tilt map for SEIS" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "TFW" ,
+                  "valueMeaning": "Insight Camera data. Tilt map for WTS" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "TLM-raw" ,
+                  "valueMeaning": "HP3\/RAD raw tether length monitor data" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "TNF" ,
+                  "valueMeaning": "DSN TRK 2-34 tracking and navigation data" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "TRO" ,
+                  "valueMeaning": "DSN TRK 2-23 troposphere calibration data" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "UIH" ,
+                  "valueMeaning": "Insight Camera data. Instrument Normal for HP3." ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "UIS" ,
+                  "valueMeaning": "Insight Camera data. Instrument Normal for SEIS." ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "UIW" ,
+                  "valueMeaning": "Insight Camera data. Instrument Normal for WTS." ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "UUF" ,
+                  "valueMeaning": "Insight Camera data. Surface Normal (UVW) U-band Filled" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "UUU" ,
+                  "valueMeaning": "Insight Camera data. Surface Normal (UVW) U-band" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "UVF" ,
+                  "valueMeaning": "Insight Camera data. Surface Normal (UVW) Filled" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "UVO" ,
+                  "valueMeaning": "Insight Camera data. Surface Normal (UVW) with Overlay" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "UVP" ,
+                  "valueMeaning": "Insight Camera data. Surface Normal (UVW) Projected onto Plane" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "UVS" ,
+                  "valueMeaning": "Insight Camera data. Surface Normal (UVW) for Slope computations" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "UVT" ,
+                  "valueMeaning": "Insight Camera data. Surface Normal (UVW) Angle ('T' for theta) between Normal and Plane" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "UVW" ,
+                  "valueMeaning": "Insight Camera data. Surface Normal (UVW)" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "VVF" ,
+                  "valueMeaning": "Insight Camera data. Surface Normal (UVW) V-band Filled" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "VVV" ,
+                  "valueMeaning": "Insight Camera data. Surface Normal (UVW) V-band" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "WEA" ,
+                  "valueMeaning": "DSN TRK 2-24 weather data" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "WSH" ,
+                  "valueMeaning": "Insight Camera data. Workspace boundary for HP3" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "WSS" ,
+                  "valueMeaning": "Insight Camera data. Workspace boundary for SEIS and WTS" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "WWF" ,
+                  "valueMeaning": "Insight Camera data. Surface Normal (UVW) W-band Filled" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "WWW" ,
+                  "valueMeaning": "Insight Camera data. Surface Normal (UVW) W-band" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "XXF" ,
+                  "valueMeaning": "Insight Camera data. XYZ X-band Filled" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "XXX" ,
+                  "valueMeaning": "Insight Camera data. XYZ X-band" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "XYE" ,
+                  "valueMeaning": "Insight Camera data. XYZ Error Metric" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "XYF" ,
+                  "valueMeaning": "Insight Camera data. XYZ Filled" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "XYM" ,
+                  "valueMeaning": "Insight Camera data. XYZ Masked" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "XYO" ,
+                  "valueMeaning": "Insight Camera data. XYZ with Overlay" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "XYR" ,
+                  "valueMeaning": "Insight Camera data. XYZ expressed in Rover Nav frame" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "XYZ" ,
+                  "valueMeaning": "Insight Camera data. XYZ expressed in Site frame" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "YYF" ,
+                  "valueMeaning": "Insight Camera data. XYZ Y-band Filled" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "YYY" ,
+                  "valueMeaning": "Insight Camera data. XYZ Y-band" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "ZIH" ,
+                  "valueMeaning": "Insight Camera data. Instrument Z for HP3." ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "ZIS" ,
+                  "valueMeaning": "Insight Camera data. Instrument Z for SEIS." ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "ZIW" ,
+                  "valueMeaning": "Insight Camera data. Instrument Z for WTS." ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "ZZF" ,
+                  "valueMeaning": "Insight Camera data. XYZ Z-band Filled" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "ZZZ" ,
+                  "valueMeaning": "Insight Camera data. XYZ Z-band" ,
+                  "isDeprecated": "false"
+                }
+             }
+           ]
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.insight.Observation_Information.insight.release_number" ,
+            "title": "release_number" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "insight" ,
+            "steward": "geo" ,
+            "versionId": "1.11" ,
+            "description": "Release_number is the number of a scheduled release of InSight data from PDS. The first Insight data release is Release 1a. The release_number for a given product is always the first release in which it appears, and does not change if the product is revised later." ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Short_String_Collapsed" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Short_String_Collapsed" ,
+            "minimumCharacters": "1" ,
+            "maximumCharacters": "5" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.insight.Observation_Information.insight.software_name" ,
+            "title": "software_name" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "insight" ,
+            "steward": "geo" ,
+            "versionId": "1.11" ,
+            "description": "Software_name identifies the processing software used to generate a data product." ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Short_String_Preserved" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Short_String_Preserved" ,
+            "minimumCharacters": "1" ,
+            "maximumCharacters": "255" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.insight.Observation_Information.insight.software_version_id" ,
+            "title": "software_version_id" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "insight" ,
+            "steward": "geo" ,
+            "versionId": "1.11" ,
+            "description": "Software_version_id identifies the version of the processing software used to generate a data product." ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Short_String_Preserved" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Short_String_Preserved" ,
+            "minimumCharacters": "1" ,
+            "maximumCharacters": "255" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.insight.Observation_Information.insight.sol_number" ,
+            "title": "sol_number" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "insight" ,
+            "steward": "geo" ,
+            "versionId": "1.11" ,
+            "description": "Sol_number is the number of the Mars day on which an observation was acquired. Landing day is Sol 0." ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Integer" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Integer" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "0" ,
+            "maximumValue": "9223372036854775807" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.insight.Observation_Information.insight.spacecraft_clock_count_partition" ,
+            "title": "spacecraft_clock_count_partition" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "insight" ,
+            "steward": "geo" ,
+            "versionId": "1.11" ,
+            "description": "The spacecraft_clock_count_partition provides the clock partition active for the spacecraft_clock_start_count and spacecraft_clock_stop_count attributes. This attribute may be used when the spacecraft_clock values do not include a partition number." ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Integer" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Integer" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "1" ,
+            "maximumValue": "9223372036854775807" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.insight.Observation_Information.insight.spacecraft_clock_start_count" ,
+            "title": "spacecraft_clock_start_count" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "insight" ,
+            "steward": "geo" ,
+            "versionId": "1.11" ,
+            "description": "The spacecraft_clock_start_count is the value of the spacecraft clock at the beginning of an observation. It represents the number of ticks. If a fractional value is present, it represents the number of 1\/65536 ticks." ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Short_String_Collapsed" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Short_String_Collapsed" ,
+            "minimumCharacters": "1" ,
+            "maximumCharacters": "18" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "([1-9]\/)?[0-9]{1,10}(\\-[0-9]{5})?" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.insight.Observation_Information.insight.spacecraft_clock_stop_count" ,
+            "title": "spacecraft_clock_stop_count" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "insight" ,
+            "steward": "geo" ,
+            "versionId": "1.11" ,
+            "description": "The spacecraft_clock_stop_count is the value of the spacecraft clock at the end of an observation." ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Short_String_Collapsed" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Short_String_Collapsed" ,
+            "minimumCharacters": "1" ,
+            "maximumCharacters": "18" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "([1-9]\/)?[0-9]{1,10}(\\-[0-9]{5})?" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.insight.Observation_Information.insight.start_local_mean_solar_time" ,
+            "title": "start_local_mean_solar_time" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "insight" ,
+            "steward": "geo" ,
+            "versionId": "1.11" ,
+            "description": "Start_local_mean_solar_time is the local mean solar time, as defined in the main PDS4 data dictionary, at the beginning of an observation." ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Short_String_Collapsed" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Short_String_Collapsed" ,
+            "minimumCharacters": "10" ,
+            "maximumCharacters": "24" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "(Sol\\-)?[0-9]{1,5}M[0-2][0-9]:[0-5][0-9]:[0-5][0-9](\\.[0-9]{1,5})?" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.insight.Observation_Information.insight.start_local_true_solar_time" ,
+            "title": "start_local_true_solar_time" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "insight" ,
+            "steward": "geo" ,
+            "versionId": "1.11" ,
+            "description": "Start_local_true_solar_time is the local true solar time, as defined in the main PDS4 data dictionary, at the beginning of an observation." ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Short_String_Collapsed" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Short_String_Collapsed" ,
+            "minimumCharacters": "8" ,
+            "maximumCharacters": "24" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "((Sol\\-)?[0-9]{1,5} )?[0-2][0-9]:[0-5][0-9]:[0-5][0-9](\\.[0-9]{1,5})?" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.insight.Observation_Information.insight.start_sol_number" ,
+            "title": "start_sol_number" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "insight" ,
+            "steward": "geo" ,
+            "versionId": "1.11" ,
+            "description": "Start_sol_number is the number of the Mars day on which a multiple-day observation was begun. Landing day is Sol 0." ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Integer" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Integer" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "0" ,
+            "maximumValue": "9223372036854775807" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.insight.Observation_Information.insight.start_solar_longitude" ,
+            "title": "start_solar_longitude" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "insight" ,
+            "steward": "geo" ,
+            "versionId": "1.11" ,
+            "description": "Start_solar_longitude is the solar longitude, as defined in the main PDS4 data dictionary, at the beginning of an observation." ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Real" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Real" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "0" ,
+            "maximumValue": "360" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "Units_of_Angle" ,
+            "unitOfMeasureId": "0001_NASA_PDS_1.pds.Units_of_Angle" ,
+            "unitId": "arcmin, arcsec, deg, hr, mrad, rad" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.insight.Observation_Information.insight.stop_local_mean_solar_time" ,
+            "title": "stop_local_mean_solar_time" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "insight" ,
+            "steward": "geo" ,
+            "versionId": "1.11" ,
+            "description": "Stop_local_mean_solar_time is the local mean solar time, as defined in the main PDS4 data dictionary, at the end of an observation." ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Short_String_Collapsed" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Short_String_Collapsed" ,
+            "minimumCharacters": "10" ,
+            "maximumCharacters": "24" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "(Sol\\-)?[0-9]{1,5}M[0-2][0-9]:[0-5][0-9]:[0-5][0-9](\\.[0-9]{1,5})?" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.insight.Observation_Information.insight.stop_local_true_solar_time" ,
+            "title": "stop_local_true_solar_time" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "insight" ,
+            "steward": "geo" ,
+            "versionId": "1.11" ,
+            "description": "Stop_local_true_solar_time is the local true solar time, as defined in the main PDS4 data dictionary, at the end of an observation." ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Short_String_Collapsed" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Short_String_Collapsed" ,
+            "minimumCharacters": "8" ,
+            "maximumCharacters": "24" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "((Sol\\-)?[0-9]{1,5} )?[0-2][0-9]:[0-5][0-9]:[0-5][0-9](\\.[0-9]{1,5})?" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.insight.Observation_Information.insight.stop_sol_number" ,
+            "title": "stop_sol_number" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "insight" ,
+            "steward": "geo" ,
+            "versionId": "1.11" ,
+            "description": "Stop_sol_number is the number of the Mars day on which a multiple-day observation was ended. Landing day is Sol 0." ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Integer" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Integer" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "0" ,
+            "maximumValue": "9223372036854775807" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.insight.Observation_Information.insight.stop_solar_longitude" ,
+            "title": "stop_solar_longitude" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "insight" ,
+            "steward": "geo" ,
+            "versionId": "1.11" ,
+            "description": "Stop_solar_longitude is the solar longitude, as defined in the main PDS4 data dictionary, at the end of an observation." ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Real" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Real" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "0" ,
+            "maximumValue": "360" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "Units_of_Angle" ,
+            "unitOfMeasureId": "0001_NASA_PDS_1.pds.Units_of_Angle" ,
+            "unitId": "arcmin, arcsec, deg, hr, mrad, rad" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.insight.SEED_Equivalent.insight.seed_file_name" ,
+            "title": "seed_file_name" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "insight" ,
+            "steward": "geo" ,
+            "versionId": "1.11" ,
+            "description": " SEIS data products are archived in their native SEED format and in a PDS-compatible ASCII format. The seed_file_name attribute gives the name of the file that is the SEED equivalent of an ASCII data file. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_File_Name" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_File_Name" ,
+            "minimumCharacters": "1" ,
+            "maximumCharacters": "255" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.insight.SEIS_Instrument_Parameters.insight.channel_name" ,
+            "title": "channel_name" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "insight" ,
+            "steward": "geo" ,
+            "versionId": "1.11" ,
+            "description": "A SEIS data product contains data from a single location and single instrument channel. The channel_name uniquely identifies the location and channel pair using the format NN.AAA, where NN is a two-digit location number and AAA is a three-character channel code (letters or digits). The complete list of channel names may be found in the Channel Naming document in the SEIS document collection." ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Short_String_Collapsed" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Short_String_Collapsed" ,
+            "minimumCharacters": "6" ,
+            "maximumCharacters": "6" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "[0-9]{2}\\.([A-Z]|[a-z]|[0-9]){3}" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.insight.SEIS_Instrument_Parameters.insight.sample_count" ,
+            "title": "sample_count" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "insight" ,
+            "steward": "geo" ,
+            "versionId": "1.11" ,
+            "description": "Sample_count is the number of samples in a SEIS mini-SEED or GeoCSV product." ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Integer" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Integer" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "-9223372036854775808" ,
+            "maximumValue": "9223372036854775807" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.insight.SEIS_Instrument_Parameters.insight.sampling_rate" ,
+            "title": "sampling_rate" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "insight" ,
+            "steward": "geo" ,
+            "versionId": "1.11" ,
+            "description": "Sampling_rate represents the number of samples per second (local on-board seconds). Because the instrument (EBox) clock drift is dependent on temperature, sampling_rate various over UTC time. However, this variation is small enough so as to be negligible and can be ignored for scientific analyses. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Real" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Real" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "-1.7976931348623157e308" ,
+            "maximumValue": "1.7976931348623157e308" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "Units_of_Frequency" ,
+            "unitOfMeasureId": "0001_NASA_PDS_1.pds.Units_of_Frequency" ,
+            "unitId": "Hz" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.insight.SEIS_Instrument_Parameters.insight.seis_data_type" ,
+            "title": "seis_data_type" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "insight" ,
+            "steward": "geo" ,
+            "versionId": "1.11" ,
+            "description": "SEIS mini-SEED products and their equivalent GeoCSV products contain only seismic data, and therefore have the seis_data_type \"waveform\". SEIS dataless SEED products and their equivalent StationXML products contain only metadata for the seismic data files, and therefore have the seis_data_type \"metadata\". " ,
+            "isNillable": "false" ,
+            "isEnumerated": "true" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Short_String_Collapsed" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Short_String_Collapsed" ,
+            "minimumCharacters": "1" ,
+            "maximumCharacters": "255" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          , "PermissibleValueList": [
+              {"PermissibleValue": {
+                  "value": "metadata" ,
+                  "valueMeaning": "The data product contains only metadata." ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "waveform" ,
+                  "valueMeaning": "The data product contains only seismic data." ,
+                  "isDeprecated": "false"
+                }
+             }
+           ]
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.insight.SEIS_Instrument_Parameters.insight.seis_waveform_type" ,
+            "title": "seis_waveform_type" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "insight" ,
+            "steward": "geo" ,
+            "versionId": "1.11" ,
+            "description": "SEIS mini-SEED products and their equivalent GeoCSV products contain either continuous data, with one data product per UTC day, or event data, with one data product per event. An event may last several minutes. Continuous data products have seis_waveform_type \"continuous\". Event data products have seis_waveform_type \"event\". " ,
+            "isNillable": "false" ,
+            "isEnumerated": "true" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Short_String_Collapsed" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Short_String_Collapsed" ,
+            "minimumCharacters": "1" ,
+            "maximumCharacters": "255" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          , "PermissibleValueList": [
+              {"PermissibleValue": {
+                  "value": "continuous" ,
+                  "valueMeaning": "The data product contains continuous seismic data." ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "event" ,
+                  "valueMeaning": "The data product contains event seismic data." ,
+                  "isDeprecated": "false"
+                }
+             }
+           ]
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.insight.SEIS_Instrument_Parameters.insight.signal_name" ,
+            "title": "signal_name" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "insight" ,
+            "steward": "geo" ,
+            "versionId": "1.11" ,
+            "description": "The signal name is a short descriptive English name corresponding to a combination of SEIS channel code and location code. There are more than 1000 such combinations." ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Short_String_Collapsed" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Short_String_Collapsed" ,
+            "minimumCharacters": "1" ,
+            "maximumCharacters": "255" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      ]
+    }
+  }
+]
