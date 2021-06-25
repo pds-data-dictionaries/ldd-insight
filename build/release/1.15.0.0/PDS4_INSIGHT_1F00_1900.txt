@@ -7,7 +7,7 @@ Configuration:
    LDD Discipline (T/F):  false
    LDD Namespace URL:     http://pds.nasa.gov/pds4/
    LDD URN Prefix:        urn:nasa:pds:
-   Time                   Fri Jun 11 16:54:52 UTC 2021
+   Time                   Fri Jun 25 16:09:04 UTC 2021
    Common Schema          [PDS4_PDS_1F00.xsd]
    Common Schematron      [PDS4_PDS_1F00.sch]
    IM Version Id:         1.15.0.0
@@ -55,7 +55,7 @@ Parsed Input - Header:
     Built with LDDTool -plJ -V 1F00 PDS4_INSIGHT_IngestLDD.xml
 
   
-   Last Modification Time 2021-06-08T16:54Z
+   Last Modification Time 2021-06-25T16:05Z
    PDS4 Merge Flag        false
 
 Parsed Input - Attributes:
