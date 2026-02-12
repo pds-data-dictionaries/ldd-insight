@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <!-- PDS4 XML/Schema for Name Space Id:insight  Version:1.9.0.0 - Sat Jun 26 19:03:42 UTC 2021 -->
+  <!-- PDS4 XML/Schema for Name Space Id:insight  Version:1.9.0.0 - Thu Feb 12 19:29:28 UTC 2026 -->
   <!-- Generated from the PDS4 Information Model Version 1.15.0.0 - System Build 11a -->
   <!-- *** This PDS4 product schema is an operational deliverable. *** -->
   <!--                                                                           -->
   <!--               Dictionary Stack                                            -->
   <!-- 1.15.0.0 - pds: - Common Dictionary                                       -->
   <!-- 1.9.0.0 - insight: - InSight Mission                                      -->
-  <!--   file:/home/runner/work/ldd-insight/ldd-insight/src/PDS4_INSIGHT_IngestL -->
   <!--                                                                           -->
   <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
     targetNamespace="http://pds.nasa.gov/pds4/mission/insight/v1"
@@ -45,22 +44,8 @@
     </xs:annotation>
     <xs:sequence>
       <xs:element name="ascii_equivalent_file_name" type="insight:ascii_equivalent_file_name" minOccurs="1" maxOccurs="1"> </xs:element>
-      <xs:element name="ASCII_Equivalent_Internal_Reference" type="insight:ASCII_Equivalent_Internal_Reference" minOccurs="1" maxOccurs="1"> </xs:element>
+      <xs:element ref="pds:Internal_Reference" minOccurs="1" maxOccurs="1"> </xs:element>
     </xs:sequence>
-  </xs:complexType>
-
-  <xs:complexType name="ASCII_Equivalent_Internal_Reference">
-    <xs:annotation>
-      <xs:documentation>The Internal_Reference class is used to
-        cross-reference other products in PDS4-compliant registries of
-        PDS and its recognized international partners.</xs:documentation>
-    </xs:annotation>
-    <xs:sequence>
-      <xs:element name="ASCII_Equivalent_reference_type" type="insight:ASCII_Equivalent_reference_type" minOccurs="1" maxOccurs="1"> </xs:element>
-    </xs:sequence>
-    <!-- Begin assert statements for schematron - Enumerated Values -->
-    <!-- <xs:assert test="insight:ASCII_Equivalent_reference_type = ('seed_to_ascii')"/> -->
-    <!-- End assert statements for schematron - Enumerated Values -->
   </xs:complexType>
 
   <xs:complexType name="Metadata_Location">
@@ -71,22 +56,8 @@
     </xs:annotation>
     <xs:sequence>
       <xs:element name="metadata_file_name" type="insight:metadata_file_name" minOccurs="1" maxOccurs="1"> </xs:element>
-      <xs:element name="Metadata_Location_Internal_Reference" type="insight:Metadata_Location_Internal_Reference" minOccurs="1" maxOccurs="1"> </xs:element>
+      <xs:element ref="pds:Internal_Reference" minOccurs="1" maxOccurs="1"> </xs:element>
     </xs:sequence>
-  </xs:complexType>
-
-  <xs:complexType name="Metadata_Location_Internal_Reference">
-    <xs:annotation>
-      <xs:documentation>The Internal_Reference class is used to
-        cross-reference other products in PDS4-compliant registries of
-        PDS and its recognized international partners.</xs:documentation>
-    </xs:annotation>
-    <xs:sequence>
-      <xs:element name="Metadata_Location_reference_type" type="insight:Metadata_Location_reference_type" minOccurs="1" maxOccurs="1"> </xs:element>
-    </xs:sequence>
-    <!-- Begin assert statements for schematron - Enumerated Values -->
-    <!-- <xs:assert test="insight:Metadata_Location_reference_type = ('data_to_metadata')"/> -->
-    <!-- End assert statements for schematron - Enumerated Values -->
   </xs:complexType>
 
   <xs:complexType name="Observation_Information">
@@ -133,22 +104,8 @@
     </xs:annotation>
     <xs:sequence>
       <xs:element name="seed_file_name" type="insight:seed_file_name" minOccurs="1" maxOccurs="1"> </xs:element>
-      <xs:element name="SEED_Equivalent_Internal_Reference" type="insight:SEED_Equivalent_Internal_Reference" minOccurs="1" maxOccurs="1"> </xs:element>
+      <xs:element ref="pds:Internal_Reference" minOccurs="1" maxOccurs="1"> </xs:element>
     </xs:sequence>
-  </xs:complexType>
-
-  <xs:complexType name="SEED_Equivalent_Internal_Reference">
-    <xs:annotation>
-      <xs:documentation>The Internal_Reference class is used to
-        cross-reference other products in PDS4-compliant registries of
-        PDS and its recognized international partners.</xs:documentation>
-    </xs:annotation>
-    <xs:sequence>
-      <xs:element name="SEED_Equivalent_reference_type" type="insight:SEED_Equivalent_reference_type" minOccurs="1" maxOccurs="1"> </xs:element>
-    </xs:sequence>
-    <!-- Begin assert statements for schematron - Enumerated Values -->
-    <!-- <xs:assert test="insight:SEED_Equivalent_reference_type = ('ascii_to_seed')"/> -->
-    <!-- End assert statements for schematron - Enumerated Values -->
   </xs:complexType>
 
   <xs:complexType name="SEIS_Instrument_Parameters">
@@ -180,33 +137,6 @@
         common namespace.
       </xs:documentation>
     </xs:annotation>
-
-  <xs:simpleType name="ASCII_Equivalent_reference_type">
-    <xs:annotation>
-      <xs:documentation>The reference_type attribute provides the name
-        of the association.</xs:documentation>
-    </xs:annotation>
-    <xs:restriction base="pds:ASCII_Short_String_Collapsed">
-	   </xs:restriction>
-  </xs:simpleType>
-
-  <xs:simpleType name="Metadata_Location_reference_type">
-    <xs:annotation>
-      <xs:documentation>The reference_type attribute provides the name
-        of the association.</xs:documentation>
-    </xs:annotation>
-    <xs:restriction base="pds:ASCII_Short_String_Collapsed">
-	   </xs:restriction>
-  </xs:simpleType>
-
-  <xs:simpleType name="SEED_Equivalent_reference_type">
-    <xs:annotation>
-      <xs:documentation>The reference_type attribute provides the name
-        of the association.</xs:documentation>
-    </xs:annotation>
-    <xs:restriction base="pds:ASCII_Short_String_Collapsed">
-	   </xs:restriction>
-  </xs:simpleType>
 
   <xs:simpleType name="aobt_clock_start_count">
     <xs:annotation>
