@@ -1,19 +1,10 @@
 
->>  INFO The configured IM Versions are:[1G00, 1F00, 1E00, 1D00, 1C00, 1B10, 1B00]
->>  INFO The provided IM Version 1B00 is valid
->>  INFO LDDTOOL Version: 13.0.2
->>  INFO IM Version Id: 1.11.0.0
+>>  INFO LDDTOOL Version: 16.0.0
+>>  INFO IM Version Id: 1.15.0.0
 >>  INFO IM Namespace Id: pds
->>  INFO IM Label Version Id: 1.0
->>  INFO Date: Sat Jun 26 19:03:34 UTC 2021
->>  INFO PARENT_DIR: /tmp/lddtool-13.0.2
->>  INFO SCRIPT_DIR: /tmp/lddtool-13.0.2/bin
->>  INFO LIB_DIR: /tmp/lddtool-13.0.2/lib
->>  WARNING Class omitted from build - Class Identifier:0001_NASA_PDS_1.pds.Schematron_Rule
->>  WARNING Class omitted from build - Class Identifier:0001_NASA_PDS_1.pds.Schematron_Assert
->>  WARNING get class using attribute value array - lAttr.identifier:0001_NASA_PDS_1.insight.ASCII_Equivalent.insight.ASCII_Equivalent_Internal_Reference - using first found - lClassMember.identifier:0001_NASA_PDS_1.insight.ASCII_Equivalent.pds.Internal_Reference
->>  WARNING get class using attribute value array - lAttr.identifier:0001_NASA_PDS_1.insight.Metadata_Location.insight.Metadata_Location_Internal_Reference - using first found - lClassMember.identifier:0001_NASA_PDS_1.insight.Metadata_Location.pds.Internal_Reference
->>  WARNING get class using attribute value array - lAttr.identifier:0001_NASA_PDS_1.insight.SEED_Equivalent.insight.SEED_Equivalent_Internal_Reference - using first found - lClassMember.identifier:0001_NASA_PDS_1.insight.SEED_Equivalent.pds.Internal_Reference
+>>  INFO IM Label Version Id: 1.21
+>>  INFO Date: Thu Feb 12 19:29:28 UTC 2026
+>>  INFO PARENT_DIR: /tmp/lddtool-16.0.0/Data/
 
 >>> INFO Init:  - Config.Properties Namespace Id Using:pds
 >>> INFO Init:  - LDD Dictionary_Type is Mission
@@ -48,12 +39,27 @@
 >>> INFO Attribute: <channel_name> - The default minimum characters provided by the attribute's data type is being overridden with 6
 >>> INFO Attribute: <channel_name> - The default maximum characters provided by the attribute's data type is being overridden with 6
 >>> WARNING Init:  - Config.Properties Namespace Id Not Found:insight
->>> WARNING Header:  - New steward has been specified:geo
->>> WARNING Header:  - New namespace id has been specified:insight
 
  -- LDDTool Execution Summary --
-     8 warning(s)
+     1 warning(s)
      0 error(s)
      0 fatal error(s)
+
+Input:
+
+     - IM Version: 1F00
+     - PDS4 Flag: true
+     - LDD Flag: true
+     - IM Version: true
+     - Export JSON Flag: true
+
+     - Ingest LDD(s): /home/runner/work/ldd-insight/ldd-insight/src/PDS4_INSIGHT_IngestLDD.xml
+
+Output:
+
+     - ./PDS4_INSIGHT_1F00_1900.xsd
+     - ./PDS4_INSIGHT_1F00_1900.sch
+     - ./PDS4_INSIGHT_1F00_1900.xml
+     - ./export/PDS4_PDS_1F00.JSON
 
 >>  INFO Exit(0)
