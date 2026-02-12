@@ -1,9 +1,16 @@
 
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Dictionary.pds.description
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Dictionary.pds.ldd_version_id
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Dictionary.pds.name
+>>  ERROR 11179 data dictionary class is missing for overwrite - Identifier:ObjectClass.OC.0001_NASA_PDS_1.pds.Cartography_Group
+>>  ERROR 11179 data dictionary class is missing for overwrite - Identifier:ObjectClass.OC.0001_NASA_PDS_1.pds.Dictionary
+>>  ERROR 11179 data dictionary class is missing for overwrite - Identifier:ObjectClass.OC.0001_NASA_PDS_1.pds.Product_Dictionary
+>>  ERROR 11179 data dictionary class is missing for overwrite - Identifier:ObjectClass.OC.0001_NASA_PDS_1.pds.Rings
 >>  INFO LDDTOOL Version: 16.0.0
->>  INFO IM Version Id: 1.15.0.0
+>>  INFO IM Version Id: 1.11.0.0
 >>  INFO IM Namespace Id: pds
->>  INFO IM Label Version Id: 1.21
->>  INFO Date: Thu Feb 12 14:39:35 UTC 2026
+>>  INFO IM Label Version Id: 1.17
+>>  INFO Date: Thu Feb 12 14:42:13 UTC 2026
 >>  INFO PARENT_DIR: /tmp/lddtool-16.0.0/Data/
 
 >>> INFO Init:  - Config.Properties Namespace Id Using:pds
@@ -42,12 +49,12 @@
 
  -- LDDTool Execution Summary --
      1 warning(s)
-     0 error(s)
+     7 error(s)
      0 fatal error(s)
 
 Input:
 
-     - IM Version: 1F00
+     - IM Version: 1B00
      - PDS4 Flag: true
      - LDD Flag: true
      - IM Version: true
@@ -57,9 +64,9 @@ Input:
 
 Output:
 
-     - ./PDS4_INSIGHT_1F00_1900.xsd
-     - ./PDS4_INSIGHT_1F00_1900.sch
-     - ./PDS4_INSIGHT_1F00_1900.xml
-     - ./export/PDS4_PDS_1F00.JSON
+     - ./PDS4_INSIGHT_1B00_1900.xsd
+     - ./PDS4_INSIGHT_1B00_1900.sch
+     - ./PDS4_INSIGHT_1B00_1900.xml
+     - ./export/PDS4_PDS_1B00.JSON
 
->>  INFO Exit(0)
+>>  INFO Exit(1)
